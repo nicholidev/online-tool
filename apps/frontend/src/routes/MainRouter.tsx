@@ -29,6 +29,7 @@ const RoomPage = React.lazy(() => import('../pages/room/RoomPage'))
 const NotFoundPage = React.lazy(() => import('../pages/errors/404/NotFoundPage'))
 
 const MainRouter = () => {
+    console.log(AppStore)
     return (
         <>
             {AppStore.appIsReady ? (

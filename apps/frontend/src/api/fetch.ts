@@ -7,7 +7,7 @@ export const getSocketApiUrl = () => {
 }
 
 export const getApiUrl = () => {
-    const url = import.meta.env.VITE_API_URL
+    const url = import.meta.env.VITE_API_URL || "http://localhost:3333"
     if (typeof url !== 'string') throw new Error(`VITE_API_URL should be a valid string`)
     return url
 }
